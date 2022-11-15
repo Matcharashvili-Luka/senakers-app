@@ -3,7 +3,7 @@ import '../Navigation_bar/Navbar.css';
 
 function Navbar({ setTranslate_x }) {
     const [active_product, set_active_produt] = useState(0);
-    const product_name = ["AIR", "JORDAN", "BLAZER", "CRATER", "HIPPIE"];
+    const product_name = ["BLAZER", "AIR", "CRATER", "HIPPIE", "JORDAN"];
 
     const find_index_function = (name) => {
         setTranslate_x(product_name.indexOf(name));

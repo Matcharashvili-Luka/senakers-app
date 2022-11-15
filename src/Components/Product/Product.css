@@ -1,0 +1,94 @@
+.product_container{
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    margin-top: 50px;  
+    width: 500vw;
+}
+
+.product{
+    display: flex;
+    width: 100vw;
+    background-color: rgb(221, 220, 220);
+    clip-path: polygon(0 0, 95% 10%, 100% 100%, 5% 90%);
+}
+
+.product .images{
+    width: 40%;
+    margin-left: 100px;
+}
+
+.product .images img{
+    width: 100%;
+}
+
+.product_info{
+    margin-left: 100px;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0rem 2rem;
+}
+
+.product_text_info h1{
+    font-size: 55px;
+}
+
+.product_text_info h4{
+    font-size: 25px;
+    font-weight: 400;
+    color: rgb(116, 116, 116);
+    margin-bottom: 20px;
+}
+.product_specs .colors div{
+    background-color: red;
+    height: 25px;
+    width: 25px;
+    margin-right: 20px;
+    cursor: pointer;
+    outline: 2px solid black;
+}
+
+.product_specs .colors{
+    display: flex;
+    margin: 40px 0px 20px 0px;
+}
+
+.product_specs .size{
+    display: flex;
+}
+
+.product_specs .size div{
+    cursor: pointer;
+    display: flex;
+    margin-right: 30px;
+    outline: 1px solid black;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    transition: .3s;
+}
+
+.product_specs .size div:hover{
+    background-color: black;
+    color: #fff;
+}
+
+.product_specs button{
+    margin-top: 40px;
+    font-size: 30px;
+    padding: .5rem 1.5rem;
+    font-weight: 700;
+    color: #fff;
+    background-color: #000;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.product_specs button:hover{
+    color: #000;
+    background-color: #fff;
+}
