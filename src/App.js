@@ -19,6 +19,7 @@ function App() {
       <Features />
       <Product 
         translate_x={translate_x}
+        setTranslate_x={setTranslate_x}
       />
     </div>
   );

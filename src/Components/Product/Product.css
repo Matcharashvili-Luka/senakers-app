@@ -1,16 +1,21 @@
+.product_main_container{
+    margin-top: 100px;
+}
+
 .product_container{
     height: 90vh;
     display: flex;
     align-items: center;
-    margin-top: 50px;  
+    margin-top: 0px;  
     width: 500vw;
+    transition: 1.5s ease-in-out;
 }
 
 .product{
     display: flex;
     width: 100vw;
     background-color: rgb(221, 220, 220);
-    clip-path: polygon(0 0, 95% 10%, 100% 100%, 5% 90%);
+    clip-path: polygon(0 0, 95% 10%, 100% 100%, 5% 95%);
 }
 
 .product .images{
@@ -48,6 +53,9 @@
     margin-right: 20px;
     cursor: pointer;
     outline: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .product_specs .colors{
@@ -91,4 +99,24 @@
 .product_specs button:hover{
     color: #000;
     background-color: #fff;
+}
+
+#checked{
+    border-radius: 50%;
+}
+
+.other_specs{
+    display: flex;
+}
+
+.other_specs .select{
+    margin-right: 20px;
+}
+
+.other_specs .select select{
+    width: 50px;
+    font-size: 18px;
+    outline: 1px solid black;
+    border: none;
+    cursor: pointer;
 }

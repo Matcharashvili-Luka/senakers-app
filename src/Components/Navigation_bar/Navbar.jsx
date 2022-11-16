@@ -1,13 +1,8 @@
-import React, { useState } from 'react';
+import React from 'react';
 import '../Navigation_bar/Navbar.css';
+import Lower_navbar from './Lower_navbar';
 
 function Navbar({ setTranslate_x }) {
-    const [active_product, set_active_produt] = useState(0);
-    const product_name = ["BLAZER", "AIR", "CRATER", "HIPPIE", "JORDAN"];
-
-    const find_index_function = (name) => {
-        setTranslate_x(product_name.indexOf(name));
-    }
   return (
     <div className="navbar_container">
         <div className="upper_section">
@@ -20,17 +15,9 @@ function Navbar({ setTranslate_x }) {
                 <i class="fa-solid fa-fire"></i>
             </div>
         </div>
-        <div className="lower_section">
-            {product_name.map((product) => {
-                return(
-                    <p
-                        onClick={() => find_index_function(product)}
-                    >
-                        {product}
-                    </p>
-                )
-            })}
-        </div>
+        <Lower_navbar 
+            setTranslate_x={setTranslate_x}
+        />
     </div>
   )
 }
