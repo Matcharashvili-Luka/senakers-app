@@ -11,7 +11,7 @@ function Main({ translate_x }) {
     >
         {main_page_data.map((element) => {
             return (
-                <div className='main_page_container'>
+                <div className='main_page_container' key={element.id}>
                     <div className="product_price">
                         <p
                             style={{ backgroundColor: `${element.color}`}}

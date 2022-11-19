@@ -14,6 +14,7 @@ function Lower_navbar({ setTranslate_x }) {
             return(
                 <p
                     onClick={() => find_index_function(product)}
+                    key={product}
                 >
                     {product}
                 </p>

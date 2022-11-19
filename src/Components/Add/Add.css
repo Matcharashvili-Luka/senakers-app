@@ -1,0 +1,75 @@
+.add_container div{
+    max-width: 300px;
+}
+
+.add_container div img{
+    width: 100%;
+    margin: 15px 0px;
+}
+
+.add_container div p{
+    font-size: 23px;
+    font-weight: 700;
+}
+
+.add_container{
+    display: flex;
+    justify-content: space-around;
+    margin: 100px 0px;
+    flex-wrap: wrap;
+}
+
+
+.new_collection{
+    background: black;
+    display: flex;
+    width: 100vw;
+    height: 500px;
+}
+
+.new_collection .left{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.new_collection .middle{
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.new_collection .middle p{
+    font-size: 25px;
+}
+
+.new_collection .middle h3{
+    font-size: 40px;
+    margin-top: 10px;
+}
+
+.new_collection .middle button{
+    background: #fff;
+    outline: none;
+    border: none;
+    font-size: 25px;
+    font-weight: 900;
+    margin-top: 50px;
+    cursor: pointer;
+    padding: 1rem 2.5rem;
+    transition: .3s;
+}
+
+.new_collection .middle button:hover{
+    transform: scale(1.2);
+}
+
+.new_collection div{
+    flex: 1;
+}
+
+.new_collection div img{
+    height: 100%;
+}

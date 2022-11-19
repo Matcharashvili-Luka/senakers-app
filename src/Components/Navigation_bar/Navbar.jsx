@@ -12,7 +12,7 @@ function Navbar({ setTranslate_x }) {
             </div>
             <div className="limited_offer_logo">
                 <p className="limited_offer_text">Limited Offer!</p>
-                <i class="fa-solid fa-fire"></i>
+                <i className="fa-solid fa-fire"></i>
             </div>
         </div>
         <Lower_navbar 

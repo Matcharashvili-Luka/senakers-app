@@ -16,6 +16,7 @@ function Product_specs({
             {element.product.map((each_product) => {
                 return (
                     <div
+                        key={element.product.indexOf(each_product)}
                         style={{ backgroundColor: `${each_product.color}`}}
                         onClick={() => set_img_idx(element.product.indexOf(each_product))}
                     ></div>

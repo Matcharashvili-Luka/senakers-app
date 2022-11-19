@@ -7,7 +7,7 @@ function Checkout({ chosen_product, img_idx, product_size, product_qtn, open_che
   return (
     <div className='checkout_container' id={open_check_out ? 'open_checkout_container' : 'closed_checkout_container'}>
         <i 
-            class="fa-solid fa-circle-xmark"
+            className="fa-solid fa-circle-xmark"
             onClick={() => set_open_check_out(false)}
         ></i>
         <Checkout_product_info
@@ -18,6 +18,7 @@ function Checkout({ chosen_product, img_idx, product_size, product_qtn, open_che
         />
         <Checkout_price_info 
             chosen_product={chosen_product}
+            product_qtn={product_qtn}
         />
     </div>
   )

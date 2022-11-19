@@ -23,7 +23,7 @@ function Product({ translate_x, setTranslate_x }) {
         >
             {main_page_data.map((element) => {
                 return(
-                    <div className='product'>
+                    <div className='product' key={element.id}>
                         <div className='images'>
                             <img src={element.product[img_idx].img} alt="" />
                         </div>

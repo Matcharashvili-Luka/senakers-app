@@ -2,7 +2,7 @@ import React from 'react';
 import visa from '../../assets/visa.png';
 import master from '../../assets/master.png';
 
-function Checkout_price_info({ chosen_product }) {
+function Checkout_price_info({ chosen_product, product_qtn }) {
     const alert = () => { alert('DONE!') }
 
   return (
@@ -42,8 +42,12 @@ function Checkout_price_info({ chosen_product }) {
         <div className="calculations">
             <p className='info_header'>Price Calculation</p>
             <div className="price">
-                <p>Product price: </p>
+                <p>Single Product price: </p>
                 <p>${chosen_product.price}</p>
+            </div>
+            <div className="price">
+                <p>Total Product price: </p>
+                <p>${product_qtn * chosen_product.price}</p>
             </div>
             <div className="shipping">
                 <p>Shipping: </p>
@@ -51,7 +55,7 @@ function Checkout_price_info({ chosen_product }) {
             </div>
             <div className="total">
                 <p>Total: </p>
-                <p className='final_price'>${39 + chosen_product.price}</p>
+                <p className='final_price'>${39 + product_qtn * chosen_product.price}</p>
             </div>
         </div>
         <div className="payment_methods">
@@ -59,11 +63,11 @@ function Checkout_price_info({ chosen_product }) {
             <div className="cards">
                 <div className="visa">
                     <input type="checkbox" id="visa" />
-                    <label for='visa'><img src={visa}/></label>
+                    <label htmlFor='visa'><img src={visa}/></label>
                 </div>
                 <div className="master">
                     <input type="checkbox" id="master" />
-                    <label for='master'><img src={master}/></label>
+                    <label htmlFor='master'><img src={master}/></label>
                 </div>
             </div>
         </div>
