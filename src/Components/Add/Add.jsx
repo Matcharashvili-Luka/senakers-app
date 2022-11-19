@@ -15,7 +15,7 @@ function Add() {
                 <hr />
                 <img src={sports2} alt="" />
             </div>
-            <div className="second">
+            <div className="second hideOnPhone_900">
                 <img src={sports3} alt="" />
                 <p>This Is The First Day</p>
                 <p>Of Your New Life!</p>
@@ -28,7 +28,7 @@ function Add() {
             </div>
         </div>
         <div className='new_collection'>
-            <div className="left hideOnPhone">
+            <div className="left">
                 <img src={sneakers2} alt="" />
             </div>
             <div className="middle">
@@ -37,7 +37,7 @@ function Add() {
                 <h3>New Colection!</h3>
                 <button>SHOP NOW</button>
             </div>
-            <div className="right hideOnPhone">
+            <div className="right hideOnPhone_1050">
                 <img src={sneakers1} alt="" />
             </div>
         </div>

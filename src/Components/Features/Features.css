@@ -23,3 +23,16 @@
     justify-content: space-around;
     flex-wrap: wrap;
 }
+
+
+@media screen and (max-width: 1050px) {
+    .feature{
+        max-width: 200px;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .feature{
+        max-width: 170px;
+    }
+}
