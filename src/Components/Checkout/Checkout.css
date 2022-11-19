@@ -1,0 +1,206 @@
+.product_main_container{
+    position: relative;
+}
+
+.checkout_container{
+    display: flex;
+    width: calc(100vw - 15px);
+    height: calc(100vh - 15px);
+    padding: 2rem 2rem;
+    background-color: rgb(211, 211, 211);
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    transition: 2s ease-in-out;
+}
+
+#open_checkout_container{
+    left: 0;
+}
+
+#closed_checkout_container{
+    left: -100vw;
+}
+
+.fa-circle-xmark{
+    position: absolute;
+    top: 1rem;
+    right: 3rem; 
+    font-size: 40px;
+    transition: .3s; 
+    cursor: pointer;
+}
+
+.fa-circle-xmark:hover{
+    color: red; 
+}
+
+.checkout_price_info,
+.checkout_product_info{
+    flex: 1;
+}
+
+.checkout_product_info .image_section{
+    max-width: 550px;
+    height: 550px;
+    border-radius: 50%;
+}
+
+.checkout_product_info .image_section img{
+    width: 100%;
+}
+
+.checkout_container .specs_section{
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    background-color: greenyellow;
+    font-size: 22px;
+    font-weight: bold;
+    justify-content: space-between;
+    outline: 1px solid black;
+    padding: .5rem 1rem;
+    width: calc(100% - 3rem);
+}
+
+.checkout_container .color{
+    display: flex;
+}
+
+.checkout_container .color div{
+    height: 25px;
+    width: 25px;
+    outline: 1px solid black;
+    margin-left: .5rem;
+    border-radius: 50%;
+}
+
+
+
+
+
+/* price */
+
+.checkout_price_info{
+    padding: 1rem 0rem 1rem 3rem;
+}
+
+.info_header{
+    font-size: 25px;
+    margin-bottom: 15px;
+    color: rgb(255, 136, 0);
+}
+
+.checkout_price_info h1{
+    margin-bottom: 1rem;
+    font-size: 40px;
+    border-bottom: 1px solid black;
+}
+
+.name_lastName, .location{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.section{
+    margin-bottom: 20px;
+}
+
+.name_lastName div, 
+.phone,
+.location div p{
+    font-size: 19px;
+    margin-right: 50px;
+}
+
+.name_lastName div input, 
+.phone input,
+.address input{
+    width: 200px;
+    outline: none;
+    border: none;
+    background: transparent;
+    border-bottom: 1px solid black;
+    font-size: 18px;
+    margin-top: 5px;
+    padding: .2rem;
+    cursor: pointer;
+}
+
+.location .country select{
+    cursor: pointer;
+    width: 200px;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid black;
+    background: transparent;
+    font-size: 18px;
+    margin-top: 5px;
+    padding: .1rem;
+    margin-right: 50px;
+}
+
+.calculations .info_header{
+    margin-top: 30px;
+}
+
+.calculations{
+    width: 200px;
+    font-size: 18px;
+}
+
+.calculations div{
+    display: flex;
+    justify-content: space-between;
+}
+
+.total{
+    line-height: 35px;
+    border-top: 1px solid green;
+    margin-top: 10px;
+}
+
+.final_price{
+    font-weight: bold;
+}
+
+
+/* payment methods */
+
+.payment_methods,
+.payment_methods .cards,
+.payment_methods .cards div{
+    display: flex;
+    font-size: 20px;
+    align-items: center;
+}
+
+.payment_methods .cards div{
+    margin-left: 15px;
+}
+
+.payment_methods .cards div input{
+    margin-right: 8px;
+}
+
+.payment_methods .cards div label img{
+    width: 60px;
+    cursor: pointer;
+}
+
+.buy_it_now button{
+    outline: none;
+    border: none;
+    font-size: 25px;
+    font-weight: bold;
+    padding: .7rem 3rem;
+    color: #000;
+    outline: 2px solid black;
+    color: #fff;
+    cursor: pointer;
+    transition: border-radius .4s;
+}
+
+.buy_it_now button:hover{
+    border-radius: 40px;
+}

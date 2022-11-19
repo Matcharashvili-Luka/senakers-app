@@ -1,6 +1,7 @@
 import React from 'react';
 import '../Main_page/Main.css';
-import {main_page_data} from '../../Data/Data';
+import { main_page_data } from '../../Data/Data';
+import { Link } from 'react-scroll'
 
 function Main({ translate_x }) {
   return (
@@ -25,7 +26,9 @@ function Main({ translate_x }) {
                     <div className="product_text">
                         <p>{element.text}</p>
                         <p>New Season!</p>
-                        <button>Shop Now</button>
+                        <Link to="product_section" smooth={true} duration={1000} >
+                            <button>Shop Now</button>
+                        </Link>
                     </div>
                 </div>
             )

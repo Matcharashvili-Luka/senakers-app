@@ -3,7 +3,7 @@
 }
 
 .product_container{
-    height: 90vh;
+    height: calc(100vh - 56px);
     display: flex;
     align-items: center;
     margin-top: 0px;  
@@ -46,13 +46,14 @@
     color: rgb(116, 116, 116);
     margin-bottom: 20px;
 }
+
 .product_specs .colors div{
-    background-color: red;
     height: 25px;
     width: 25px;
+    border-radius: 3px;
     margin-right: 20px;
     cursor: pointer;
-    outline: 2px solid black;
+    outline: 1px solid black;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -114,6 +115,7 @@
 }
 
 .other_specs .select select{
+    border-radius: 3px;
     width: 50px;
     font-size: 18px;
     outline: 1px solid black;

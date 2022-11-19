@@ -13,51 +13,86 @@ export const main_page_data = [
     {
         id: 0,
         img: blazer,
-        additional_img: blazer2,
         text: "Blazer",
         price: 109,
         color: '#663399',
-        color1: 'white',
-        color2: 'green',
+        product: [
+            {
+                color: 'white',
+                img: blazer,
+            },
+            {
+                color: 'green',
+                img: blazer2,
+            },
+        ],
     },
     {
         id: 1,
         img: air,
-        additional_img: air2,
         text: "Air Forge",
         price: 119,
         color: '#369e62',
-        color1: 'black',
-        color2: 'blue',
+        product: [
+            {
+                color: 'black',
+                img: air,
+            },
+            {
+                color: 'blue',
+                img: air2,
+            },
+        ],
     },
     {
         id: 2,
         img: crater,
-        additional_img: crater2,
         text: "Crater",
         price: 99,
         color: '#008080',
-        color1: 'black',
-        color2: 'white',
+        product: [
+            {
+                color: 'black',
+                img: crater,
+            },
+            {
+                color: 'white',
+                img: crater2,
+            },
+        ],
     },
     {
         id: 3,
         img: hippie,
-        additional_img: hippie2,
         text: "Hippie",
         price: 139,
         color: '#6495ED',
-        color1: 'grey',
-        color2: 'black',
+        product: [
+            {
+                color: 'grey',
+                img: hippie,
+            },
+            {
+                color: 'black',
+                img: hippie2,
+            },
+        ],
     },
     {
         id: 4,
         img: jordan,
-        additional_img: jordan2,
         text: "Jordan",
         price: 199,
         color: '#7c7350',
-        color1: 'grey',
-        color2: 'green',
+        product: [
+            {
+                color: 'grey',
+                img: jordan,
+            },
+            {
+                color: 'green',
+                img: jordan2,
+            },
+        ],
     }
 ]
