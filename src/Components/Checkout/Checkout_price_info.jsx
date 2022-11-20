@@ -3,7 +3,9 @@ import visa from '../../assets/visa.png';
 import master from '../../assets/master.png';
 
 function Checkout_price_info({ chosen_product, product_qtn }) {
-    const alert = () => { alert('DONE!') }
+    const onsubmit = () => {
+        alert('DONE!');
+    }
 
   return (
     <div className="checkout_price_info">
@@ -28,9 +30,18 @@ function Checkout_price_info({ chosen_product, product_qtn }) {
                 <div className="country">
                     <p>Country</p>
                     <select name="country" id="">
-                        <option value="1">USA</option>
-                        <option value="1">Georgia</option>
-                        <option value="1">Spain</option>
+                        <option value="">USA</option>
+                        <option value="">Italy</option>
+                        <option value="">Spain</option>
+                        <option value="">Georgia</option>
+                        <option value="">Kanada</option>
+                        <option value="">Germany</option>
+                        <option value="">France</option>
+                        <option value="">UK</option>
+                        <option value="">Portugal</option>
+                        <option value="">Emirates</option>
+                        <option value="">Turkey</option>
+                        <option value="">Ukraine</option>
                     </select>
                 </div>
                 <div className="address">
@@ -72,8 +83,8 @@ function Checkout_price_info({ chosen_product, product_qtn }) {
             </div>
         </div>
         <div className="buy_it_now">
-            <button 
-                onClick={() => alert}
+            <button
+                onClick={ onsubmit }
                 style={{ backgroundColor: chosen_product.color}}
             >PAY AND BUY</button>
         </div>

@@ -174,4 +174,25 @@
     .product_specs .colors div{
         margin: 0px 10px;
     }
+    .product_main_container{
+        height: 1150px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .product_main_container{
+        height: 1100px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .product_main_container{
+        height: 1050px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .product_main_container{
+        height: 1030px;
+    }
 }

@@ -1,6 +1,6 @@
 .footer_container{
     display: flex;
-    padding: 1rem 2rem 3rem 2rem;
+    padding: 1rem 2rem;
     margin-top: 50px;
     justify-content: space-around;
     flex-wrap: wrap;
@@ -12,6 +12,7 @@
     margin-top: 15px;
     cursor: pointer;
     transition: .3s;
+    color: rgb(134, 134, 134);
 }
 
 .footer_ul_list li:hover{
@@ -32,7 +33,7 @@
 .footer_container .right input{
     font-size: 18px;
     padding: .2rem .5rem;
-    margin: 5px 5px 5px 0px;
+    margin: 10px 5px 10px 0px;
 }
 
 .footer_container .right button{
@@ -53,6 +54,12 @@
 }
 
 @media screen and (max-width: 500px) {
+    .footer_container .right button{
+        margin-top: 30px;
+    }
+}
+
+@media screen and (max-width: 500px) {
     .footer_container{
         padding: 1rem 1rem 3rem 1rem;
         gap: 35px;
@@ -66,6 +73,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    margin-top: 50px;
 }
 .creator p{
     margin: 0px 2px;

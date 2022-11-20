@@ -8,7 +8,7 @@ import '../Add/Add.css';
 
 function Add() {
   return (
-    <div>
+    <div className='add_section'>
         <div className='add_container'>
             <div className="first">
                 <p>Be Yourself!</p>
