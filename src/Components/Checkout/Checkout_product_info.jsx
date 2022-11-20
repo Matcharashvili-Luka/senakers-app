@@ -9,7 +9,10 @@ function Checkout_product_info({ chosen_product, img_idx, product_size, product_
         >
             <img src={ chosen_product.product[img_idx].img } alt="" />
         </div>
-        <div className="specs_section">
+        <div 
+            className="specs_section"
+            style={{ backgroundColor: `${chosen_product.color}`}}
+        >
             <div className="color">
                 <p>Color: </p>
                 <div

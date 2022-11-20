@@ -64,3 +64,17 @@
     margin-left: 10px;
     filter: drop-shadow(0px 0px 5px rgba(255, 0, 0, 0.651));
 }
+
+.active_nav_item{
+    color: aqua;
+    border-bottom: 2px solid aqua;
+}
+
+@media screen and (max-width: 800px) {
+    .upper_section{
+        flex-direction: column;
+    }
+    .limited_offer_logo{
+        margin-top: 10px;
+    }
+}
