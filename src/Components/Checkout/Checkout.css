@@ -7,11 +7,12 @@
     width: 100vw;
     height: 100vh;
     padding: 2rem 2rem;
-    background-color: rgb(211, 211, 211);
+    background-color: rgb(214, 214, 214);
     justify-content: center;
     position: absolute;
     top: 0;
     transition: 2s ease-in-out;
+    outline: 2px solid black;
 }
 
 #open_checkout_container{
@@ -19,7 +20,7 @@
 }
 
 #closed_checkout_container{
-    left: -100vw;
+    left: -101vw;
 }
 
 .fa-circle-xmark{

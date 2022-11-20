@@ -98,6 +98,8 @@
         max-height: 300px;
     }
     .main_page_container{
-        height: 100vh;
+        padding-bottom: 5rem;
+        height: auto;
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);
     }
 }

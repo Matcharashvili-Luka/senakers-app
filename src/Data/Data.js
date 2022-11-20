@@ -30,7 +30,7 @@ export const main_page_data = [
     {
         id: 1,
         img: air,
-        text: "Air Forge",
+        text: "Air Force",
         price: 119,
         color: '#369e62',
         product: [
